@@ -16,6 +16,6 @@
       <dependency id="Neo4jClient.Extension" version="1.0.2" />
       <dependency id="Neo4jClient.Extension.Attributes" version="1.0.2" />
       <dependency id="Newtonsoft.Json" version="9.0.1" />
-	</dependencies>
+    </dependencies>
   </metadata>
 </package>
