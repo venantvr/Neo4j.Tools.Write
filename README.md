@@ -1,4 +1,4 @@
-# Neo4j.Tools.Write
+# Neo4j.Tools.Write (Object model to Neo4j...)
 
 Goal: to be able to push a complex graph of entities into a Neo4j database by matching objects with nodes, and navigation properties with relations. This project is based on the official *Neo4jClient* API and the *Neo4jClient.Extension* extension library. This library allows to transfer, with a fluent syntax, an object model into a Neo4j database.
 
