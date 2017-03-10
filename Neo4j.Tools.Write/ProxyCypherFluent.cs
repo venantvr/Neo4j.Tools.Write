@@ -117,7 +117,7 @@ namespace Neo4j.Tools.Write
             entities.ForEach(item =>
                              {
                                  // ReSharper disable once AccessToDisposedClosure
-                                 var fromKey = CreateEntity<TFromEndPoint>(item);
+                                 var fromKey = CreateEntity(item);
 
                                  navigationProperties.ForEach(navigationProperty =>
                                                               {
@@ -125,9 +125,9 @@ namespace Neo4j.Tools.Write
                                                                   navigationProperty?.TargetEntities.Invoke(item).ForEach(c =>
                                                                                                                           {
                                                                                                                               // ReSharper disable once AccessToDisposedClosure
-                                                                                                                              var toKey = CreateEntity<TToEndPoint>(c);
+                                                                                                                              var toKey = CreateEntity(c);
                                                                                                                               // ReSharper disable once AccessToDisposedClosure
-                                                                                                                              CreateRelationship<BaseRelationship>(relationFactory.Invoke(null, fromKey, null, toKey));
+                                                                                                                              CreateRelationship(relationFactory.Invoke(null, fromKey, null, toKey));
                                                                                                                           }
                                                                       );
                                                               });

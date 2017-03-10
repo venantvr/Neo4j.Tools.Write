@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>Neo4j.Tools.Write</id>
-    <version>1.0.0</version>
+    <version>1.0.4</version>
     <authors>venantvr</authors>
     <owners>venantvr</owners>
     <projectUrl>https://github.com/venantvr/Neo4j.Tools.Write</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>To be able to push a complex graph of entities into a Neo4j database by matching objects with nodes, and navigation properties with relations.</description>
-    <releaseNotes>First commit...</releaseNotes>
+    <description>This library aims at pushing a complex graph of entities into a Neo4j database by matching objects with nodes, and navigation properties with relations.</description>
+    <releaseNotes>This is the first commit... please be indulgent.</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>neo4jclient neo4j-database neo4j</tags>
     <dependencies>
