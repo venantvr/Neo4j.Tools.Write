@@ -1,8 +1,8 @@
 # Neo4j.Tools.Write (Object model to Neo4j...)
 
-Goal: to be able to push a complex graph of entities into a Neo4j database by matching objects with nodes, and navigation properties with relations. This project is based on the official *Neo4jClient* API and the *Neo4jClient.Extension* extension library. This library allows to transfer, with a fluent syntax, an object model into a Neo4j database.
+Goal : to be able to push a complex graph of entities into a Neo4j database by matching objects with nodes, and navigation properties with relations. This project is based on the official *Neo4jClient* API and the *Neo4jClient.Extension* extension library. This library allows to transfer, with a fluent syntax, an object model into a Neo4j database.
 
-Example: imagine you built by introspection a list of all classes and namespaces embedded in your assemblies. Each namespace contains a set of classes. For persisting this network of dependencies, you should be able to write it as it figures below.
+Example : imagine you built by introspection a list of all classes and namespaces embedded in your assemblies. Each namespace contains a set of classes. For persisting this network of dependencies, you should be able to write it as it figures below.
 
     using (var client = new GraphClient(new Uri(neo4jServerUrl), neo4jUserName, neo4jUserPassword))
     {
@@ -24,6 +24,4 @@ Finally, you need to specify the *Hash Processor* that will help you to define w
 
 The relationship is defined through an expression builder, and the *Encypher* method will do the magic.
 
-**TODO**: put all that stuff into Nuget repositories, one for the introspection stuff, one for the Neo4j stuff...
-
-**TODO**: illustrate with a complete use-case...
+A complete use-case is here : https://github.com/venantvr/Introspection.Lite
